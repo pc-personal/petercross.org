@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Cross | Strategic Data & AI Leader</title>
+    <style>
+        :root {
+            --bg-color: #0f111a;
+            --text-color: #e0e0e0;
+            --accent-color: #82aaff;
+            --sub-color: #8f93a2;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1, h2 {
+            font-weight: normal;
+            color: var(--text-color);
+            margin-top: 2.5em;
+            margin-bottom: 1em;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 1em;
+            color: var(--accent-color);
+        }
+        h2::before {
+            content: "> ";
+            color: var(--sub-color);
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 0.5em;
+        }
+        .location {
+            color: var(--sub-color);
+            font-size: 0.9rem;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        li::before {
+            content: "— ";
+            color: var(--sub-color);
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover {
+            border-bottom: 1px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Peter Cross</h1>
+        <div class="tagline">Strategic Data & AI Leader</div>
+    </header>
+
+    <section id="about">
+        <h2>~/about</h2>
+        <p>Over 20 years of leadership experience in all things data and AI.</p>
+        <p>Data wrangler and part-time dog chaperone.</p>
+    </section>
+
+    <section id="connect">
+        <h2>Connect</h2>
+        <ul>
+            <li><a href="https://linkedin.com/in/peter-cross-16204929/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li id="contact-link"></li>
+        </ul>
+    </section>
+
+    <script>
+        // Obfuscated email injection
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fragmented Base64 to defeat basic scrapers and regex hunters
+            // Parts: "outreach", "@", "petercross", ".org"
+            const parts = ["b3V0cmVhY2g=", "QA==", "cGV0ZXJjcm9zcw==", "Lm9yZw=="];
+            try {
+                const email = parts.map(p => atob(p)).join('');
+                const container = document.getElementById('contact-link');
+                const link = document.createElement('a');
+                link.href = 'mailto:' + email;
+                link.textContent = 'Email';
+                container.appendChild(link);
+            } catch (e) {
+                console.error("Initialization error");
+            }
+        });
+    </script>
+</body>
+</html>
